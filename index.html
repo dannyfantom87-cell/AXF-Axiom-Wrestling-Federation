@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AXF — Axiom Wrestling Federation | Where Power Becomes Legacy</title>
+  <meta name="description" content="Axiom Wrestling Federation — The elite global wrestling promotion. Season 3, Episode 9."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ═══ LOADER ═══ -->
+<div id="ldr">
+  <div class="ll">AXF</div>
+  <div class="ls">Axiom Wrestling Federation</div>
+  <div class="lb"><div class="lf"></div></div>
+</div>
+
+<!-- ═══ MOBILE MENU ═══ -->
+<div class="mob" id="mob">
+  <a data-page="home">Home</a>
+  <a data-page="superstars">Superstars</a>
+  <a data-page="champions">Championships</a>
+  <a data-page="events">Events</a>
+  <a data-page="news">News</a>
+  <a data-page="storylines">Storylines</a>
+  <a data-page="legends">Legends</a>
+  <a data-page="gallery">Gallery</a>
+  <a data-page="media">Media</a>
+  <a data-page="about">About</a>
+  <a data-page="contact">Contact</a>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <div class="nav-in">
+    <a class="nav-logo" data-page="home" style="cursor:pointer">AX<em>F</em></a>
+    <ul class="nav-links">
+      <li><a data-page="home">Home</a></li>
+      <li><a data-page="superstars">Superstars</a></li>
+      <li><a data-page="champions">Championships</a></li>
+      <li><a data-page="events">Events</a></li>
+      <li><a data-page="storylines">Storylines</a></li>
+      <li><a data-page="news">News</a></li>
+      <li><a data-page="legends">Legends</a></li>
+      <li><a data-page="gallery">Gallery</a></li>
+      <li><a data-page="media">Media</a></li>
+      <li><a data-page="about">About</a></li>
+      <li><a data-page="contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ═══ TICKER ═══ -->
+<div class="tkr">
+  <div class="tl">BREAKING</div>
+  <div class="tt"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: HOME
+════════════════════════════════════════════ -->
+<div class="page" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-amb"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-side">
+      <div class="hero-rings">
+        <div class="rng"></div><div class="rng"></div><div class="rng"></div>
+        <div class="rtxt">AXF</div>
+      </div>
+      <div class="hero-fade"></div>
+    </div>
+    <div class="w">
+      <div class="hero-cnt">
+        <div class="hero-badge"><div class="bdot"></div>Season 3 &middot; Episode 9 &middot; Now Airing</div>
+        <span class="hero-l1">Axiom Wrestling Federation</span>
+        <h1 class="hero-h">WHERE<span class="g">POWER</span>BECOMES<span class="g">LEGACY</span></h1>
+        <p class="hero-tag">The elite global wrestling promotion. <strong>Forged in Glory.</strong></p>
+        <div class="hero-ctas">
+          <a class="bp" data-page="storylines" style="cursor:pointer"><span>&#9654;</span><span>Active Storylines</span></a>
+          <a class="bs" data-page="superstars" style="cursor:pointer"><span>&#9776;</span><span>View Roster</span></a>
+        </div>
+        <div class="hero-stats" id="hero-stats"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CHAMPIONSHIPS -->
+  <section class="sec" style="background:var(--brich)">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Gold &amp; Glory</div>
+        <h2 class="st">Featured <span class="g">Championships</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="champ-grid fi" id="home-champs"></div>
+      <div style="text-align:center;margin-top:32px" class="fi">
+        <a class="bs" data-page="champions" style="cursor:pointer">View All Championships &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVE STORYLINES PREVIEW -->
+  <section class="sec" style="background:var(--blk)">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">On Television Now</div>
+        <h2 class="st">Active <span class="r">Storylines</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="sl-grid fi" id="home-storylines"></div>
+      <div style="text-align:center;margin-top:32px" class="fi">
+        <a class="bp" data-page="storylines" style="cursor:pointer">All Active Storylines &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP MOMENTS GALLERY PREVIEW -->
+  <section class="sec" style="background:var(--brich)">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Season 3 Highlights</div>
+        <h2 class="st">Top <span class="g">Moments</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="gallery-grid fi" id="home-gallery"></div>
+      <div style="text-align:center;margin-top:32px" class="fi">
+        <a class="bs" data-page="gallery" style="cursor:pointer">Full Gallery &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATCH OF THE NIGHT -->
+  <section class="sec" style="background:var(--blk)">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Season 3 Defining Moments</div>
+        <h2 class="st">Match <span class="g">Spotlight</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="motn-grid fi" id="home-motn"></div>
+    </div>
+  </section>
+
+  <!-- NEWS PREVIEW -->
+  <section class="sec" style="background:var(--brich)">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">AXF Media Network</div>
+        <h2 class="st">Latest <span class="g">News</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="news-sb fi" id="home-news"></div>
+      <div style="text-align:center;margin-top:32px" class="fi">
+        <a class="bs" data-page="news" style="cursor:pointer">All News &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+<!-- ═══════════════════════════════════════════
+     PAGE: SUPERSTARS
+════════════════════════════════════════════ -->
+<div class="page" id="page-superstars">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">The Roster</div>
+        <h2 class="st">AXF <span class="g">Superstars</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="ss-filters fi">
+        <button class="fb on" data-filter="all">All</button>
+        <button class="fb" data-filter="main">Main Event</button>
+        <button class="fb" data-filter="heel">Heels</button>
+        <button class="fb" data-filter="face">Babyfaces</button>
+      </div>
+      <div class="ss-grid" id="ss-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: CHAMPIONS
+════════════════════════════════════════════ -->
+<div class="page" id="page-champions">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Gold &amp; Glory</div>
+        <h2 class="st">AXF <span class="g">Championships</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="champ-grid fi" id="champ-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: EVENTS
+════════════════════════════════════════════ -->
+<div class="page" id="page-events">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Season 3 Event Calendar</div>
+        <h2 class="st">AXF <span class="g">Premium Live Events</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="ppv-grid fi" id="events-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: NEWS
+════════════════════════════════════════════ -->
+<div class="page" id="page-news">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">AXF Media Network</div>
+        <h2 class="st">Latest <span class="g">News</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div id="news-wrap" class="fi"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: STORYLINES
+════════════════════════════════════════════ -->
+<div class="page" id="page-storylines">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Active Television Arcs — Season 3, E9</div>
+        <h2 class="st">Current <span class="r">Storylines</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="sl-grid fi" id="strl-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: HALL OF LEGENDS
+════════════════════════════════════════════ -->
+<div class="page" id="page-legends">
+  <section class="sec" style="background:linear-gradient(180deg,#000 0%,#050400 40%,#000 100%)">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Immortalized</div>
+        <h2 class="st">Hall of <span class="g">Legends</span></h2>
+        <div class="dv"></div>
+      </div>
+      <p class="fi" style="text-align:center;max-width:560px;margin:0 auto 48px;font-family:'Rajdhani',sans-serif;font-size:15px;color:var(--sv);line-height:1.7">
+        They defined eras. They carried this company on their backs and made it something the world remembers. These are the immortals of AXF.
+      </p>
+      <div class="leg-grid fi" id="leg-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: GALLERY
+════════════════════════════════════════════ -->
+<div class="page" id="page-gallery">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">Season 3 Captured</div>
+        <h2 class="st">AXF <span class="g">Top Moments</span></h2>
+        <div class="dv"></div>
+      </div>
+      <p class="fi" style="text-align:center;max-width:560px;margin:0 auto 40px;font-family:'Rajdhani',sans-serif;font-size:15px;color:var(--sv);line-height:1.7">
+        Six defining images from Season 3. Click any image to view full screen.
+      </p>
+      <div class="gallery-grid fi" id="gallery-grid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: MEDIA
+════════════════════════════════════════════ -->
+<div class="page" id="page-media">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">AXF Entertainment Network</div>
+        <h2 class="st">Media <span class="g">&amp; Content</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="media-grid fi">
+        <div class="pod-card">
+          <div class="pod-logo">AXF War Room</div>
+          <div class="pod-sub">Official AXF Podcast &middot; Spotify</div>
+          <p class="pod-desc">The inside voice of the Axiom Wrestling Federation. Season breakdowns, character deep dives, booking philosophy, and the full story behind the story — every week.</p>
+          <div class="pod-eps" id="pod-eps"></div>
+        </div>
+        <div>
+          <div class="vid-title">Featured Video Content</div>
+          <div class="vid-grid" id="vid-grid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: ABOUT
+════════════════════════════════════════════ -->
+<div class="page" id="page-about">
+  <section class="sec">
+    <div class="w">
+      <div class="ab-grid fi">
+        <div>
+          <div class="ab-ey">About AXF</div>
+          <h2 class="ab-h">The Federation<br>Built on <span class="g">Reckoning</span></h2>
+          <p class="ab-body">Axiom Wrestling Federation is the premier global wrestling promotion — a universe where corporate power struggles, legacy wars, and generational conflicts play out on the grandest stage. We do not produce matches. We produce history.</p>
+          <p class="ab-body">Operating across two weekly flagship shows — RAW and SmackDown — AXF delivers serialized sports drama at the highest level. Every championship reign is earned. Every storyline has a destination. Every loss has a purpose.</p>
+          <div class="ab-vals">
+            <div class="av"><div class="av-ic">&#128081;</div><div class="av-t">Power</div><div class="av-d">Control of the board. Control of the narrative. Control of the future.</div></div>
+            <div class="av"><div class="av-ic">&#128220;</div><div class="av-t">Legacy</div><div class="av-d">Every match, every promo builds the archive of history.</div></div>
+            <div class="av"><div class="av-ic">&#127916;</div><div class="av-t">Cinema</div><div class="av-d">Wrestling is a sport. AXF is prestige drama. We book like both.</div></div>
+            <div class="av"><div class="av-ic">&#9889;</div><div class="av-t">Destiny</div><div class="av-d">WrestleMania is the destination. Every story traces back to it.</div></div>
+          </div>
+          <div class="vhb">
+            <div class="vh-ic">&#127963;&#65039;</div>
+            <div>
+              <div class="vh-name">Valhalla Crown Studios</div>
+              <div class="vh-tag">"Where Legends Are Forged" &mdash; Official AXF Production Partner</div>
+            </div>
+          </div>
+        </div>
+        <div class="ab-vis">
+          <div class="orb-out">
+            <div class="orb-in"></div>
+            <div class="orb-ctr">
+              <div class="orb-ax">AX</div>
+              <div class="orb-f">Fed.</div>
+            </div>
+            <div class="orb-dot" style="top:7px;left:50%;transform:translateX(-50%)"></div>
+            <div class="orb-dot" style="bottom:7px;left:50%;transform:translateX(-50%)"></div>
+            <div class="orb-dot" style="left:7px;top:50%;transform:translateY(-50%)"></div>
+            <div class="orb-dot" style="right:7px;top:50%;transform:translateY(-50%)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE: CONTACT
+════════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <section class="sec">
+    <div class="w">
+      <div class="sh fi">
+        <div class="ey">AXF Corporate</div>
+        <h2 class="st">Get in <span class="g">Touch</span></h2>
+        <div class="dv"></div>
+      </div>
+      <div class="ct-grid fi">
+        <div>
+          <h3 class="ct-h">AXF Business Inquiries</h3>
+          <p class="ct-b">Axiom Wrestling Federation is open to media partnerships, sponsorships, content licensing, and talent relations. Reach through the appropriate channel or use the form.</p>
+          <div class="ct-items">
+            <div class="cti"><div class="cti-ic">&#128231;</div><div><div class="cti-t">Email</div><div class="cti-d">dannyfantom87@gmail.com</div></div></div>
+            <div class="cti"><div class="cti-ic">&#128247;</div><div><div class="cti-t">Instagram / Threads</div><div class="cti-d">@axf.2017</div></div></div>
+            <div class="cti"><div class="cti-ic">&#127897;&#65039;</div><div><div class="cti-t">Podcast &mdash; AXF War Room</div><div class="cti-d">Available on Spotify</div></div></div>
+            <div class="cti"><div class="cti-ic">&#128250;</div><div><div class="cti-t">YouTube</div><div class="cti-d">YWE &middot; YWE Studios</div></div></div>
+          </div>
+        </div>
+        <div>
+          <div class="cf">
+            <div class="cf-row">
+              <div class="cf-f"><label class="cf-l">Name</label><input type="text" class="cfi" placeholder="Your Name"/></div>
+              <div class="cf-f"><label class="cf-l">Email</label><input type="email" class="cfi" placeholder="your@email.com"/></div>
+            </div>
+            <div class="cf-f">
+              <label class="cf-l">Inquiry Type</label>
+              <select class="cfs">
+                <option value="">Select Type...</option>
+                <option>Media Partnership</option>
+                <option>Sponsorship</option>
+                <option>Talent Relations</option>
+                <option>Content Licensing</option>
+                <option>Podcast Collaboration</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="cf-f"><label class="cf-l">Message</label><textarea class="cfa" placeholder="Tell us about your inquiry..."></textarea></div>
+            <button class="cfb" id="cf-submit">Send Inquiry &#9654;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ MODAL ═══ -->
+<div class="mbg" id="modal-bg">
+  <div class="mb">
+    <div class="mc" onclick="window.closeModal()">&#10005;</div>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- ═══ LIGHTBOX ═══ -->
+<div class="lb-bg" id="lightbox">
+  <button class="lb-close" onclick="window.closeLightbox()">&#10005;</button>
+  <img class="lb-img" src="" alt=""/>
+  <div class="lb-cap">
+    <div class="lb-cap-ev"></div>
+    <div class="lb-cap-txt"></div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="w">
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo">AXF</div>
+        <div class="ft-sub">Axiom Wrestling Federation</div>
+        <p class="ft-desc">The elite global wrestling promotion. Where Power Becomes Legacy. Season 3 streaming on YouTube via YWE and YWE Studios. Podcast on Spotify.</p>
+        <div class="ft-soc">
+          <div class="fsb">&#9654;</div>
+          <div class="fsb">&#128247;</div>
+          <div class="fsb">&#127925;</div>
+          <div class="fsb">&#128172;</div>
+        </div>
+      </div>
+      <div>
+        <div class="ft-ct">Navigate</div>
+        <ul class="ft-links">
+          <li><a data-page="superstars">Superstars</a></li>
+          <li><a data-page="champions">Championships</a></li>
+          <li><a data-page="events">Events</a></li>
+          <li><a data-page="storylines">Storylines</a></li>
+          <li><a data-page="news">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Content</div>
+        <ul class="ft-links">
+          <li><a data-page="legends">Hall of Legends</a></li>
+          <li><a data-page="gallery">Gallery</a></li>
+          <li><a data-page="media">Media &amp; Podcast</a></li>
+          <li><a data-page="about">About AXF</a></li>
+          <li><a data-page="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-ct">Productions</div>
+        <ul class="ft-links">
+          <li><a>YWE &mdash; YouTube</a></li>
+          <li><a>YWE Studios</a></li>
+          <li><a>Valhalla Crown Studios</a></li>
+          <li><a>AXF War Room &mdash; Spotify</a></li>
+          <li><a>@axf.2017</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <div class="ft-copy">&copy; 2025 <span>AXF &mdash; Axiom Wrestling Federation</span>. All Rights Reserved. A Valhalla Crown Studios Production.</div>
+      <div class="ft-leg"><a>Privacy</a><a>Terms</a><a>Media</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
